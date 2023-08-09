@@ -16,19 +16,19 @@ class Meslo {
         font-style: normal;
       }`
     ),
-    fonts.add(
-      'MesloLGS NF Bold',
-      `@font-face {
+      fonts.add(
+        'MesloLGS NF Bold',
+        `@font-face {
         font-family: "MesloLGS NF";
         src: url("https://raw.githubusercontent.com/romkatv/powerlevel10k-media/master/MesloLGS%20NF%20Bold.ttf");
         font-weight: bold;
         font-style: normal;
       }`
-    ),
-    setFont('MesloLGS NF');
+      ),
+      fonts.setFont('MesloLGS NF');
   }
-  async run() {}
-  async destroy() {}
+  async run() { }
+  async destroy() { }
 }
 
 if (window.acode) {
