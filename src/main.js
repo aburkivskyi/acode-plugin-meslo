@@ -1,7 +1,7 @@
 import plugin from '../plugin.json';
 
 const pluginId = plugin.id;
-// const appSettings = acode.require('settings');
+const appSettings = acode.require('settings');
 const fonts = acode.require('fonts');
 // const { editor } = editorManager;
 
@@ -25,10 +25,21 @@ class Meslo {
         font-style: normal;
       }`
       ),
-      fonts.setFont('MesloLGS NF');
+      setFont('MesloLGS NF'),
+      appSettings.update({
+        fontSize: 11,
+        editorFont: 'MesloLGS NF',
+      });
   }
-  async run() { }
-  async destroy() { }
+
+  async destroy() {
+    setFont('Fira Code'),
+      appSettings.reset({
+        fontSize,
+        editorFont,
+      });
+  }
+
 }
 
 if (window.acode) {
@@ -44,3 +55,4 @@ if (window.acode) {
     acodePlugin.destroy();
   });
 }
+
