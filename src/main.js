@@ -6,6 +6,7 @@ const fonts = acode.require('fonts');
 // const { editor } = editorManager;
 
 class Meslo {
+
   async init() {
     fonts.add(
       'MesloLGS NF',
@@ -25,7 +26,7 @@ class Meslo {
         font-style: normal;
       }`
       ),
-      setFont('MesloLGS NF'),
+      fonts.setFont('MesloLGS NF'),
       appSettings.update({
         fontSize: 11,
         editorFont: 'MesloLGS NF',
