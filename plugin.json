@@ -1,16 +1,17 @@
 {
-  "id": "acode.plugin",
-  "name": "Plugin",
+  "id": "acode.plugin.meslo",
+  "name": "Meslo Font",
   "main": "dist/main.js",
   "version": "1.0.0",
   "readme": "readme.md",
   "icon": "icon.png",
   "files": [],
-  "minVersionCode" : 290,
   "price": 0,
+  "minVersionCode": 290,
   "author": {
-    "name": "",
-    "email": "",
-    "github": ""
+    "name": "Andrii Burkivskyi",
+    "email": "aburkivskyi@petalmail.com",
+    "url": "https://github.com/aburkivskyi",
+    "github": "aburkivskyi"
   }
 }
