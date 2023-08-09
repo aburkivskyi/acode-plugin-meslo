@@ -17,28 +17,28 @@ class Meslo {
         font-style: normal;
       }`
     ),
-      fonts.add(
-        'MesloLGS NF Bold',
-        `@font-face {
+    fonts.add(
+      'MesloLGS NF Bold',
+      `@font-face {
         font-family: "MesloLGS NF";
         src: url("https://raw.githubusercontent.com/romkatv/powerlevel10k-media/master/MesloLGS%20NF%20Bold.ttf");
         font-weight: bold;
         font-style: normal;
       }`
-      ),
-      fonts.setFont('MesloLGS NF'),
-      appSettings.update({
-        fontSize: 11,
-        editorFont: 'MesloLGS NF',
-      });
+    ),
+    fonts.setFont('MesloLGS NF'),
+    appSettings.update({
+      fontSize: '11px',
+      editorFont: 'MesloLGS NF',
+    });
   }
 
   async destroy() {
     setFont('Fira Code'),
-      appSettings.reset({
-        fontSize,
-        editorFont,
-      });
+    appSettings.reset({
+      fontSize,
+      editorFont,
+    });
   }
 
 }
@@ -56,4 +56,3 @@ if (window.acode) {
     acodePlugin.destroy();
   });
 }
-
